@@ -4,7 +4,7 @@ This repository includes the code for a pheWAS of genetic liability for ADHD on 
 
 I used the automated PHESANT v0.15 package to conduct the pheWAS (LINK HERE).
 
-# Filestructure
+## Filestructure
 
 There are some environmental variables that have been specified beforehand:
 
@@ -15,7 +15,7 @@ UKBBDIR: includes the UK Biobank genetic data. UKBBDATADIR and UKBBSAMPLESTATSDI
 PROJECTDATADIR: contains the UK Biobank phenotypic data.
 
 
-# 1-Polygenic risk scores
+## 1-Polygenic risk scores
 
 Polygenic risk scores (PRS) were generated using PRSice v2.0 at various thresholds. The genome-wide (p<5x10-8) score was used for the main analysis.
 
@@ -32,4 +32,4 @@ iiiii - is an outlier in heterozygosity and missing rates
 
 ... and create a new PRS-file that will serve as our exposure in the Phesant scan.
 
-# 2-Confounder
+## 2-Confounder
