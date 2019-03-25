@@ -12,7 +12,7 @@ cd ${PROJECTDIR}/PHESANT_GIT/1-PRS \
 Rscript PRSice.R \
 --prsice ${PROJECTDIR}/PHESANT_GIT/1-PRS/PRSice_linux \
 --dir . \
---base ${HOME}/GWAS_discovery/demontis-walters-martin-2017-eur-adhd-prePRS.tsv \
+--base ${HOME}/GWAS_discovery/PGC_MDD2018_10kSNPs \
 --binary-target F \
 --stat OR \
 --type bgen \
@@ -26,5 +26,5 @@ Rscript PRSice.R \
 --all-score T \
 --no-regress T \
 --print-snp T \
---out ${PROJECTDIR}/data/PRS/CHR$pIdx \
---extract ${PROJECTDIR}/data/PRS/CHR$pIdx.valid \
+--out ${PROJECTDIR}/data/PRS/MDD_CHR$pIdx \
+--extract ${PROJECTDIR}/data/PRS/MDD_CHR$pIdx.valid \
