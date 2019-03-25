@@ -10,7 +10,15 @@ module add languages/R-3.3.1-ATLAS
 resultsProcessingDir="${PROJECTDIR}/WAS/resultsProcessing/"
 
 # directory with PHESANT results
-resDir="${PROJECTDIR}/results/ADHD_genomewide/"
+resDir_ADHD="${PROJECTDIR}/results/ADHD_genomewide/"
+resDir_ASD="${PROJECTDIR}/results/ASD_genomewide/"
+resDir_SCZ="${PROJECTDIR}/results/SCZ_genomewide/"
+resDir_BP="${PROJECTDIR}/results/BP_genomewide/"
+resDir_MDD="${PROJECTDIR}/results/MDD_genomewide/"
 
 cd $resultsProcessingDir
-Rscript mainCombineResults.r --resDir=${resDir} --numParts=200 --variablelistfile="../variable-info/outcome-info.tsv"
+Rscript mainCombineResults.r --resDir=${resDir_ADHD} --numParts=200 --variablelistfile="../variable-info/outcome-info.tsv"
+Rscript mainCombineResults.r --resDir=${resDir_ASD} --numParts=200 --variablelistfile="../variable-info/outcome-info.tsv"
+Rscript mainCombineResults.r --resDir=${resDir_SCZ} --numParts=200 --variablelistfile="../variable-info/outcome-info.tsv"
+Rscript mainCombineResults.r --resDir=${resDir_BP} --numParts=200 --variablelistfile="../variable-info/outcome-info.tsv"
+Rscript mainCombineResults.r --resDir=${resDir_MDD} --numParts=200 --variablelistfile="../variable-info/outcome-info.tsv"
