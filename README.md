@@ -2,7 +2,7 @@
 
 This repository includes the code for a pheWAS of genetic liability for ADHD on ~23000 traits in UK Biobank and accompanies (PAPER HERE). It can serve as a template for the other pheWAS conducted in this paper for genetic liability for autism spectrum disorder, schizophrenia, major depressive disorder and bipolar disoder.
 
-I used the automated PHESANT v0.15 package to conduct the pheWAS (LINK HERE).
+I used the automated PHESANT v0.17 package to conduct the pheWAS (https://github.com/MRCIEU/PHESANT).
 
 ## Filestructure
 
@@ -33,3 +33,11 @@ iiiii - is an outlier in heterozygosity and missing rates
 ... and create a new PRS-file that will serve as our exposure in the Phesant scan.
 
 ## 2-Confounder
+Age, sex and the first 10 principal components were included in all regression models.
+For sensitivity analysis, follow-up analysis were also adjusted for the location of the assessment centre and genetic batch.
+
+## 3-PHESANT
+The pheWAS scan was run according to the scripts provided here : https://github.com/MRCIEU/PHESANT
+
+## 4-Follow-Up
+Follow-up analysis were done for selected continious outcomes that pass the multiple testing threshold to get estimates on their orginal scale for better interpretation of the results. 
