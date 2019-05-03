@@ -21,7 +21,7 @@ PROJECTDATADIR: contains the UK Biobank phenotypic data.
 
 Polygenic risk scores (PRS) were generated using PRSice v2.0 at various thresholds. The genome-wide (p<5x10-8) score was used for the main analysis.
 
-# Step 1: Compute PRS
+### Step 1: Compute PRS
 PRS were calculated as the weighted sum of risk alleles per chromosome and will be averaged and standardized in step 4. GWAS summary stats used to compute the weighted PRS are :
 
 -Demontis D, Walters RK, Martin J, Mattheisen M, Als TD, Agerbo E, et al. Discovery of the first genome-wide significant risk loci for attention deficit/hyperactivity disorder. Nat Genet. 2019;51(1):63-75. 
@@ -30,10 +30,10 @@ PRS were calculated as the weighted sum of risk alleles per chromosome and will 
 -Wray NR, Ripke S, Mattheisen M, Trzaskowski M, Byrne EM, Abdellaoui A, et al. Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression. Nat Genet. 2018;50(5):668-81.
 -Ruderfer DM, Ripke S, McQuillin A, Boocock J, Stahl EA, Pavlides JMW, et al. Genomic Dissection of Bipolar Disorder and Schizophrenia, Including 28 Subphenotypes. Cell. 2018;173(7):1705-15.e16.
 
-# Step 2: Mapping identifiers
+### Step 2: Mapping identifiers
 As the phenotypic and genetics datasets have different identifiers, they have to be mapped after generating the PRS.
 
-# Step 3: Exclusion criteria
+### Step 3: Exclusion criteria
 Next, we exclude everyone who :
 
 i - has withdrawn consent (as has not yet been removed from the dataset)
@@ -43,7 +43,7 @@ iii - is related to any of the other participants in the dataset
 iiii- has a putative sex chromosom aneiploidy
 iiiii - is an outlier in heterozygosity and missing rates
 
-# Step 4: Generate standardized mean PRS
+### Step 4: Generate standardized mean PRS
 Create a new PRS-file with average, standardized scores that will serve as our exposure in the Phesant scan.
 
 ## 2-Confounder
